@@ -22,8 +22,8 @@ module.exports = async function run() {
         const dataUrl = {
           url: item.page.url
             ? {
-                maindomain: item.page.url,
-                domain: item.page.apexDomain,
+                maindomain: item.page.apexDomain,
+                domain: item.page.url,
               }
             : undefined,
           dns: item.page.country
@@ -59,6 +59,7 @@ module.exports = async function run() {
           externalLinks: [item.result],
           source: "URLSCAN",
           urlState: 1,
+          createDate: dia  
         };
 
         console.log(item);
