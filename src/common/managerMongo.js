@@ -21,8 +21,6 @@ function connectBBDD() {
 }
 
 async function crearAnalizedUrl(analizedUrl) {
-    connectBBDD();
-
     const filter = { "url.maindomain": analizedUrl.url.maindomain };
 
     await analizedUrlModel.findOneAndUpdate(filter, analizedUrl, {

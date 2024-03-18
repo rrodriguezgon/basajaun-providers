@@ -49,4 +49,6 @@ const urlAnalized = mongoose.Schema({
   urlState: Number,
 });
 
+urlAnalized.index({ "url.maindomain": 1 });
+
 module.exports = mongoose.model("urlAnalized_test", urlAnalized);

@@ -1,0 +1,51 @@
+{
+    "providers": [
+        {
+            "source": "openphish",
+            "delay": "3600000"
+        },
+        {
+            "source": "phishtank",
+            "delay": "3600000"
+        },
+        {
+            "source": "urlscan",
+            "busquedas": [
+                {
+                    "busqueda": "all",
+                    "terminos": [
+                        ""
+                    ],
+                    "delay": "1800000"
+                },
+                {
+                    "busqueda": "santander",
+                    "terminos": [
+                        "santander",
+                        "santder",
+                        "sentander"
+                    ],
+                    "delay": "1800000"
+                },
+                {
+                    "busqueda": "bankia",
+                    "terminos": [
+                        "bnkia",
+                        "b@nkia",
+                        "bancia"
+                    ],
+                    "delay": "3600000"
+                },
+                {
+                    "busqueda": "caixa",
+                    "terminos": [
+                        "coixa",
+                        "caixa",
+                        "cancha"
+                    ],
+                    "delay": "3600000"
+                }
+            ]
+        }
+    ]
+}
