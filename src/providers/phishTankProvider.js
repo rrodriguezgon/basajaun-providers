@@ -13,7 +13,8 @@ async function processUrls() {
     const { data } = await getItemsPHISHTANK();
     const dia = moment();
 
-    console.log(data.length);
+    let count = 0;
+    
     for (const item of data) {
       const dataUrl = {
         url: {
@@ -42,7 +43,10 @@ async function processUrls() {
       };
 
       await crearAnalizedUrl(dataUrl).catch((ex) => console.error(ex));
-      console.log('creado',dataUrl.url);
+      count++;
+      console.log('total:', data.length, dia.format('DD/MM HH:mm'));
+      console.log('creados:', count);
+      console.log('creado',dataUrl.url.domain);
     }
   } catch (ex) {
     console.error(ex);
