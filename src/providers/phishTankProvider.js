@@ -42,6 +42,7 @@ async function processUrls() {
       };
 
       await crearAnalizedUrl(dataUrl).catch((ex) => console.error(ex));
+      console.log('creado',data.url);
     }
   } catch (ex) {
     console.error(ex);
