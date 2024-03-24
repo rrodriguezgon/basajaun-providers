@@ -60,8 +60,7 @@ let observadorLanzando = new Proxy(inicial, {
   },
 });
 
-/*
-config.providers.forEach((provider) => {
+config.providers.filter(item => item.active).forEach((provider) => {
   if (provider.busquedas) {
     provider.busquedas.forEach((item) => {
       configurarIntervalos(provider, item);
@@ -70,7 +69,6 @@ config.providers.forEach((provider) => {
     configurarIntervalos(provider, { delay: provider.delay });
   }
 });
-*/
 
 // Función para configurar los intervalos de tiempo para agregar elementos al array
 function configurarIntervalos(provider, item) {

@@ -2,11 +2,13 @@
     "providers": [
         {
             "source": "openphish",
-            "delay": "3600000"
+            "delay": "3600000",
+            "active": true
         },
         {
             "source": "phishtank",
-            "delay": "3600000"
+            "delay": "3600000",
+            "active": false
         },
         {
             "source": "urlscan",
@@ -45,7 +47,8 @@
                     ],
                     "delay": "3600000"
                 }
-            ]
+            ],
+            "active": true
         }
     ]
 }
