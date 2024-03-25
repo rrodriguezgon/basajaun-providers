@@ -39,12 +39,12 @@ async function processUrls() {
         },
         source: "PHISHTANK",
         urlState: 1,
-        createDate: dia,
+        createDate: moment(),
       };
 
       await crearAnalizedUrl(dataUrl).catch((ex) => console.error(ex));
       count++;
-      console.log('total:', data.length, dia.format('DD/MM HH:mm'));
+      console.log('total:', data.length, moment().format('DD/MM HH:mm'));
       console.log('creados:', count);
       console.log('creado',dataUrl.url.domain);
     }
