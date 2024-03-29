@@ -8,7 +8,7 @@
         {
             "source": "phishtank",
             "delay": "3600000",
-            "active": false
+            "active": true
         },
         {
             "source": "urlscan",
@@ -49,6 +49,48 @@
                 }
             ],
             "active": true
+        }
+    ],
+    "mailing": [
+        {
+            "source": "mailing",
+            "name": "Raquel ICLOUD",
+            "delay": "300000",
+            "active": true,
+            "boxes": ["Correo no deseado", "Junk"],
+            "config": {
+                "imap": {
+                    "user": "rrodriguezgon@icloud.com",
+                    "password": "oouu-cyub-bqbn-sdvq",
+                    "host": "imap.mail.me.com",
+                    "port": 993,
+                    "authTimeout": 10000,
+                    "tls": true,
+                    "tlsOptions": {
+                        "rejectUnauthorized": false
+                    }
+                }
+            }
+        },
+        {
+            "source": "mailing",
+            "name": "Raquel GMAIL",
+            "delay": "300000",
+            "active": true,
+            "boxes": ["[Gmail]/Correu brossa"],
+            "config": {
+                "imap": {
+                    "user": "rrodriguez.1asmx@gmail.com",
+                    "password": "hwcg qlll xkcy qtct",
+                    "host": "imap.gmail.com",
+                    "port": 993,
+                    "authTimeout": 10000,
+                    "tls": true,
+                    "tlsOptions": {
+                        "rejectUnauthorized": false
+                    }
+                }
+            }
         }
     ]
 }
