@@ -1,2 +1,2 @@
 # basajaun-providers
-prueba 2
+pm2 start npm --name "app name" -- start
