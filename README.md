@@ -1,2 +1,5 @@
 # basajaun-providers
-pm2 start npm --name "app name" -- start
+
+## Script PM2
+
+pm2 start npm --name "basajaun-provider" -- run dev --exp-backoff-restart-delay=100
